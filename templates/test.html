@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ShareX</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="../src/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        ShareX
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Channels</a>
+                    <ul class="channel-nodes">
+                    	<li class="channel-node">
+                    	<a href="#"> Channel One </a></li>
+                    	<li class="channel-node"> 
+	                    	<a href="#"> Channel Two </a>
+                    	<li class="add_channel">
+                    	<a href="#" class="btn btn-default" id="new_channel"> Add a Channel
+                    	</a>
+                    	</li>
+                    </ul>
+                </li>
+                <hr class="divider">
+                <li class="dropdown" id="user__box">
+                	<a href="#" id="user__box__username" class="navbar-brand dropdown-toggle"> Jkol36 </a>
+                	
+                	<div class="current__status">
+	                	<i class="fa fa-circle fa-sm online" id="status_indicator"> </i>
+	                	<p> Online </p>
+                	</div>
+
+               </li>
+               <hr class="divider" style="width:100%;">
+
+
+
+	
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+            	<div class="row" id="top-bar"> 
+					<div class="col-lg-12" id="topbar-background"> </div>
+            	</div>
+            	<div class="row" id="channel__details">
+            		<div class="col-lg-12" id="channel__details__styling">
+    					<nav class="navbar navbar-default">
+    					  <div class="container-fluid">
+    					    <!-- Brand and toggle get grouped for better mobile display -->
+    					    <div class="navbar-header">
+    					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    					        <span class="sr-only">Toggle navigation</span>
+    					        <span class="icon-bar"></span>
+    					        <span class="icon-bar"></span>
+    					        <span class="icon-bar"></span>
+    					      </button>
+    					      <li class="dropdown"> 
+	    					      <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Channel Name <span class="caret"></span></a>
+	    					       <ul class="dropdown-menu" id="channel_functions" role="menu">
+    					            <li><a href="#">Action</a></li>
+    					            <li><a href="#">Another action</a></li>
+    					            <li><a href="#">Something else here</a></li>
+    					            <li class="divider"></li>
+    					            <li><a href="#">Separated link</a></li>
+    					            <li class="divider"></li>
+    					            <li><a href="#">One more separated link</a></li>
+    					          </ul>
+					          </li>
+    					    </div>
+    					
+    					    <!-- Collect the nav links, forms, and other content for toggling -->
+    					    <div class="collapse navbar-collapse" id="navbar">
+    					      <ul class="nav navbar-nav">
+    					      	<li> 
+    					      		<div id="channel_search_box">
+    					      		<div class="input-group">
+    					      		<input class="form-control" type="text" id="channel_search_bar" placeholder="Search for people, messages, and more!">
+    					      		<span class="input-group-btn">
+								        <button class="btn btn-default" type="button">Go!</button>
+							        </span> 
+							        </div>
+							        </div>
+    					      		
+    					      	</li>
+    					        
+    					      </ul>
+    					      </div>
+            		</div>
+            	</div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="channel__box">
+                        	<ul class="messages">
+                        	<li class="message_object">
+	                        		<div class="message_sender">
+	                        		<p> Jon Kolman: <p> 
+	                        		</div>
+	                        		<div class="message__text">
+	                        			<p> Hey </p>
+	                        		</div>
+	                    		</li>
+	                    		<li class="message_object">
+	                    			<div class="message_sender">
+	                    				<p> Martin Røed: </p>
+	                    			</div>
+	                    			<div class="message__text"> 
+										<p> Yo </p>
+	                    			</div>
+	                			</li>
+	                			</ul>
+                        	</div>  
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="message_footer">
+            	<div class="input-group">
+            		<span class="input-group-btn">
+            			<button class="btn btn-default">:)</button>
+            		</span>
+            		<input type="text" id="send_a_message" placeholder="Type Something Nice" class="form-control">
+            		<span class="input-group-btn">
+            			<button class="btn btn-default"> Send Message </button>
+        			</span>
+            	</div>
+            	
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

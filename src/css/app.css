@@ -1,0 +1,223 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #93C26D;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.sidebar-nav > #user__box > a {
+    font-size:14px;
+    width:100%;
+    height:75px;
+    margin-bottom:5px;
+}
+.online {
+    color:green;
+}
+
+.sidebar-nav > #user__box > .current__status > p{
+    position:fixed;
+    left: 55px;
+    top:261px;
+    font-size:11px;
+}
+#status_indicator {
+    position: fixed;
+    left:35px;
+    top:274px;
+}
+
+/* Top Bar Styles */ 
+#top-bar {
+    margin-bottom:50px;
+}
+#topbar-background {
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color:#2AADE5;
+    height:50px;
+    width:100%;
+}
+
+/* Channel Styling */
+#channel__details {
+    margin-top:5px;
+}
+#channel__details__styling {
+    background-color: transparent;
+}
+#channel_functions {
+    top:50px;
+    left: initial;
+}
+
+#channel_search_box {
+   position: fixed;
+   top: 80px;
+   left:70%;
+   width:25%;
+
+}
+#channel_search_bar {
+    background: transparent;
+}
+
+.channel-node {
+    color:#fff;
+    list-style: none;
+}
+#new_channel {
+    color: white;
+    height: inherit;
+    background: #2AADE5;
+    border:#2AADE5;
+}
+#new_channel:hover {
+    background: #2AADE5;
+}
+.add_channel {
+    position: fixed;
+    width:17%;
+    left:4px;
+    bottom:0;
+    height:50px;
+    margin-bottom:5px;
+}
+/* messages Styles */ 
+.message_object {
+    list-style: none;
+}
+.message__text p {
+    font-family:'Lato', 'Sans-Serif';
+}
+.message_sender p {
+    font-family:'Lato', 'Sans-Serif';
+    font-weight:900;
+}
+#message_footer {
+   position: fixed;
+   bottom:0;
+   right: 4rem;
+   left: 280px;
+   height:40px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
